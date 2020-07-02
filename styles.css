@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: inline-flex;
+    width: calc(100vw - 20em);
+    padding: 0 10em;
+    background-color: #c13c5e;
+    font-family: 'Lato';
+}
+
+.header .logo-container {
+    width: 10em;
+    padding: 1em;
+}
+
+.header .menu{
+    display: inline-flex;
+    margin-left: auto;
+    font-size: 1.8vw;
+}
+
+.header li{
+    padding: 0.5em;
+    list-style-type: none;
+}
+
+.button-login{
+    background-color: #cf6782;
+    width: 100%;
+    border-radius: 20%;
+}
+
+.fundo{
+    text-align: center;
+    color: #2e110f;
+}
+
+.titulo{
+    font-size: 4vw;
+    font-family: 'Poller One';
+    font-style: normal;
+}
+
+.descricao {
+    font-family: 'Lato';
+}
