@@ -5,7 +5,9 @@ body {
 
 .header {
     display: inline-flex;
-    width: calc(100vw - 20em);
+    /*Antes era 20 mas ficava sobrando um cantinho, não sei pq
+    width: calc(100vw - 20em);*/
+    width: calc(100vw - 22em);
     padding: 0 10em;
     background-color: #c13c5e;
     font-family: 'Lato';
@@ -29,21 +31,41 @@ body {
 
 .button-login{
     background-color: #cf6782;
-    width: 100%;
+    width: 2.5em;
+    height: 1em;
     border-radius: 20%;
 }
 
 .fundo{
+    display: inline-block;
+    position: relative;
     text-align: center;
     color: #2e110f;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .titulo{
     font-size: 4vw;
     font-family: 'Poller One';
-    font-style: normal;
+
+    position: absolute;
+    top: 10%;
+    right: 30%;
 }
 
 .descricao {
     font-family: 'Lato';
+    font-size: 2vw;
+
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+
+.fundo img{
+    width: 100%;
+    height: auto;
 }
