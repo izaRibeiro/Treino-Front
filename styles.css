@@ -5,28 +5,50 @@ body {
 
 .header {
     display: inline-flex;
-    /*Antes era 20 mas ficava sobrando um cantinho, não sei pq
-    width: calc(100vw - 20em);*/
-    width: calc(100vw - 22em);
+    width: calc(100vw - 21.1em);
+    /* width: calc(100vw - 21.8em); */
     padding: 0 10em;
     background-color: #c13c5e;
     font-family: 'Lato';
 }
 
+.toggle{
+    border: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 20%;
+    background-color: #cf6782;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    left: 100%;
+    margin-right: 5vw;
+    margin: 5px;;
+}
+
 .header .logo-container {
+    /* Mudei isso pra tentar deixar mais perto de responsivo
+    oq acha? Não está 100%
     width: 10em;
-    padding: 1em;
+    padding: 1em;*/
+
+    width: 10vw;
+    align-self: center;
+    position: absolute;
 }
 
 .header .menu{
     display: inline-flex;
     margin-left: auto;
     font-size: 1.8vw;
+    left: 65%;
+    align-self: center;
 }
 
 .header li{
     padding: 0.5em;
     list-style-type: none;
+    cursor: pointer;
 }
 
 .button-login{
@@ -47,6 +69,11 @@ body {
     margin: 0;
 }
 
+.fundo img{
+    width: 100%;
+    height: auto;
+}
+
 .titulo{
     font-size: 4vw;
     font-family: 'Poller One';
@@ -65,7 +92,32 @@ body {
     right: 20%;
 }
 
-.fundo img{
-    width: 100%;
-    height: auto;
+@media screen and (max-width: 700px){
+    .toggle{
+        display: block;
+    }
+
+    .header {
+        width: calc(100vw - 20em);
+    }
+
+    .hamburger-menu{
+        /* width: 35px;
+        height: 5px; */
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0 5px 0;
+        border-radius: 30%;
+    }
+
+     .menu li{
+        display: none;
+    } 
+
+    /* .menu li{
+        position: relative;
+        width: 100%;
+        display: flex;
+    } */
 }
