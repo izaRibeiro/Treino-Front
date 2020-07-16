@@ -5,12 +5,18 @@ body {
 
 .header {
     display: inline-flex;
-    width: calc(100vw - 21.1em);
+    width: 100%;
+    /* width: calc(100vw - 21.8em); */
     height: 5vw;
     /* width: calc(100vw - 21.8em); */
-    padding: 0 10em;
+    /* padding: 0 10em; */
+    /*Pensei em colocar assim, mas muda diretamente o width
+    padding: 0 50px;*/ 
     background-color: #c13c5e;
     font-family: 'Lato';
+        position: fixed;
+    /* Usar o z-index para não ter overlap é válido? */
+    z-index: 1;
 }
 
 .toggle{
@@ -23,8 +29,15 @@ body {
     cursor: pointer;
     position: relative;
     left: 100%;
-    margin-right: 5vw;
-    margin: 5px;;
+    margin-right: 10%;
+}
+
+.hamburger-menu{
+    width: 12px;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0 3px 0;
+    border-radius: 30%;
 }
 
 .header .logo-container {
@@ -33,6 +46,7 @@ body {
     width: 10em;
     padding: 1em;*/
 
+    margin-left: 10%;
     width: 10vw;
     align-self: center;
     position: absolute;
@@ -41,6 +55,7 @@ body {
 .header .menu{
     display: inline-flex;
     margin-left: auto;
+    margin-right: 10%;
     font-size: 1.3vw;
     left: 65%;
     align-self: center;
@@ -68,6 +83,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
+   margin-top: 5vw;
 }
 
 .fundo img{
@@ -82,16 +98,6 @@ body {
     position: absolute;
     top: 10%;
     right: 30%;
-}
-
-.hamburger-menu{
-    /* width: 35px;
-    height: 5px; */
-    width: 12px;
-    height: 2px;
-    background-color: black;
-    margin: 3px 0 3px 0;
-    border-radius: 30%;
 }
 
 .descricao {
@@ -123,6 +129,22 @@ body {
     margin: 0;
 }
 
+.first-content, .second-content{
+    height: 300px;
+    font-size: 15px;
+}
+
+.imagem-fundo-verde{
+    position: relative;
+    left: 60%;
+    width: 20%;
+    height: auto;
+}
+
+div h3 {
+    width: 40%;
+}
+
 @media screen and (max-width: 560px){
     .header{
         height: 8vw;
@@ -131,11 +153,7 @@ body {
 
 @media screen and (max-width: 700px){
     .toggle{
-        display: block;
-    }
-
-    .header {
-        width: calc(100vw - 20em);
+        display: block; 
     }
 
      .menu li{
