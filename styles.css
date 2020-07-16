@@ -6,13 +6,10 @@ body {
 .header {
     display: inline-flex;
     width: 100%;
+    transition: all .2s ease;
     /* width: calc(100vw - 21.8em); */
     height: 5vw;
-    /* width: calc(100vw - 21.8em); */
-    /* padding: 0 10em; */
-    /*Pensei em colocar assim, mas muda diretamente o width
-    padding: 0 50px;*/ 
-    background-color: #c13c5e;
+    background-color: transparent;
     font-family: 'Lato';
         position: fixed;
     /* Usar o z-index para não ter overlap é válido? */
@@ -38,6 +35,11 @@ body {
     background-color: black;
     margin: 3px 0 3px 0;
     border-radius: 30%;
+}
+
+.header-color{
+    background-color: #c13c5e;
+    transition: all .2s ease;
 }
 
 .header .logo-container {
@@ -75,6 +77,11 @@ body {
 }
 
 .fundo{
+    background-image: url("assets/ImagemDeFundo.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+
     display: inline-block;
     position: relative;
     text-align: center;
@@ -83,7 +90,6 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-   margin-top: 5vw;
 }
 
 .fundo img{
