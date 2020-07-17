@@ -115,7 +115,7 @@ body {
 }
 
 .content {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 .first-content h3{
-    margin: 0;
+    margin-left: 5%;
 }
 
 .second-content{
@@ -136,12 +136,16 @@ body {
 }
 
 .second-content h3{
-    margin: 0;
+    margin-left: 5%;
 }
 
 .first-content, .second-content{
-    height: 50vh;
+    margin-top: 0;
+    height: 45vh;
     font-size: 15px;
+    padding-top: 3%;
+    box-sizing: border-box;
+    font-size: 1vw;
 }
 
 .imagem-fundo-verde{
