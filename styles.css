@@ -147,16 +147,22 @@ body {
     height: 45vh;
     padding-top: 3%;
     padding-left: 10%;
+    padding-right: 10%;
     box-sizing: border-box;
     font-size: 1vw;
 }
 
+.second-content h3{
+    margin-left: 20%;
+    float: right;
+}
+
 .imagem-fundo-rosa{
-    position: relative;
-    left: 60%;
+    /* position: relative;
+    left: 60%; */
     width: 20%;
     height: auto;
-    float: right;
+    float: left;
 }
 
 .imagem-fundo-verde{
@@ -175,7 +181,7 @@ body {
     background-image: url("assets/RickCircle.png");
     background-repeat: round; 
     background-size: 100%;
-    margin: 15%;
+    margin-right: 15%;
 }
 
 .background-verde{
@@ -186,6 +192,10 @@ body {
 .background-rosa{
     height: 90vh;
     background-color: #fe6d73;
+}
+
+.parallax img{
+    width: 100%;
 }
 
 div h3 {
