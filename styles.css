@@ -236,7 +236,7 @@ body {
 }
 
 footer{
-    height: 90vh;
+    height: 80vh;
     background-color: #ffebeb;
 }
 
@@ -246,6 +246,25 @@ footer{
     margin-left: 10%;
     margin-right: 10%;
     background-color: black;
+}
+
+.contact {
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 40%;
+}
+
+.contact img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10%;
+}
+
+.facebook, .twitter, .instagram {
+    width: 80%;
+    display: inline-flex;
+    margin-bottom: 8%;
 }
 
 div h3 {
