@@ -147,7 +147,8 @@ body {
     font-size: 1vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-inline: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
     font-family: segoe;
     border-top-right-radius: 15%;
 }
@@ -158,7 +159,8 @@ body {
     padding-top: 3%;
     box-sizing: border-box;
     font-size: 1vw;
-    padding-inline: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .second-content h3{
