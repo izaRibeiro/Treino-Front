@@ -14,6 +14,7 @@ img {
 
 .header {
     position: fixed;
+    top: 0;
     width: 100%;
     background: #fec63e;
     padding: 15px 0;
@@ -44,6 +45,10 @@ img {
     color: #FFF;
 }
 
+.header-menu ul li a.menu-ativo {
+    color: #fff;
+}
+
 .introducao {
     width: 100%;
     height: 680px;
@@ -58,6 +63,32 @@ img {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.introducao-interna {
+	width: 100%;
+	margin-top: 92px;
+	height: 160px;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+    padding-top: 30px;
+}
+
+.introducao-interna h1 {
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: white;
+    margin: 6px auto 15px auto;
 }
 
 .quote-externo {
@@ -128,6 +159,25 @@ img {
     height: 3px;
     background: #000;
     margin: 8px auto 15px auto;
+}
+
+.subtitulo-interno {
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 24px;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.subtitulo-interno:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px 0;
 }
 
 .produtos-lista li {
@@ -216,7 +266,8 @@ img {
 }
 
 .qualidade-lista {
-	padding-top: 20px;
+    padding-top: 20px;
+    overflow: hidden;
 }
 
 .qualidade-lista li {
